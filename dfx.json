@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Ecomm_backend": {
+      "main": "src/Ecomm_backend/main.mo",
+      "type": "motoko"
+    },
+    "Ecomm_frontend": {
+      "dependencies": [
+        "Ecomm_backend"
+      ],
+      "source": [
+        "src/Ecomm_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Ecomm_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
